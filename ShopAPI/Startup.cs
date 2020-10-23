@@ -30,9 +30,9 @@ namespace ShopApi
 
             services.AddSwaggerGen(o =>
             {
-                o.SwaggerDoc("electronics-store-api", new Info
+                o.SwaggerDoc("shop-api", new Info
                 {
-                    Title = "Electronics Store API",
+                    Title = " ShopAPI",
                     Description = "Sample API"
                 });
             });
@@ -45,7 +45,7 @@ namespace ShopApi
             app.UseSwagger();
             app.UseSwaggerUI(o =>
             {
-                o.SwaggerEndpoint("/swagger/electronics-store-api/swagger.json", "Electronics Store API");
+                o.SwaggerEndpoint("/swagger/shop-api/swagger.json", "ShopAPI");
             });
         }
     }
